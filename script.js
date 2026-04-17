@@ -215,7 +215,7 @@ form.addEventListener("submit", (event) => {
     `${formData.get("probleem") || ""}`
   ];
 
-  const mailtoUrl = `mailto:techfix@hotmail.com?subject=${encodeURIComponent("Nieuwe aanvraag via TECHDIRECT")}&body=${encodeURIComponent(lines.join("\n"))}`;
+  const mailtoUrl = `mailto:techdirect@hotmail.com?subject=${encodeURIComponent("Nieuwe aanvraag via TECHDIRECT")}&body=${encodeURIComponent(lines.join("\n"))}`;
 
   successMessage.classList.add("is-visible");
   form.reset();
@@ -227,7 +227,7 @@ form.addEventListener("submit", (event) => {
   window.location.href = mailtoUrl;
 });
 
-const cookieStorageKey = "techfix-cookie-dismissed";
+const cookieStorageKey = "techdirect-cookie-dismissed";
 
 try {
   if (window.localStorage.getItem(cookieStorageKey) === "true") {
