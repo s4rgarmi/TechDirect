@@ -215,7 +215,7 @@ form.addEventListener("submit", (event) => {
     `${formData.get("probleem") || ""}`
   ];
 
-  const mailtoUrl = `mailto:techdirect@hotmail.com?subject=${encodeURIComponent("Nieuwe aanvraag via TECHDIRECT")}&body=${encodeURIComponent(lines.join("\n"))}`;
+  const mailtoUrl = `mailto:techdirect.brasschaat@gmail.com?subject=${encodeURIComponent("Nieuwe aanvraag via TECHDIRECT")}&body=${encodeURIComponent(lines.join("\n"))}`;
 
   successMessage.classList.add("is-visible");
   form.reset();
