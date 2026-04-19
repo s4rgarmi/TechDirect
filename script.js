@@ -202,29 +202,34 @@ form.addEventListener("submit", (event) => {
     return;
   }
 
-  const formData = new FormData(form);
-  const lines = [
-    "Nieuwe aanvraag via TECHDIRECT",
-    "",
-    `Naam: ${formData.get("naam") || ""}`,
-    `E-mail: ${formData.get("email") || ""}`,
-    `Telefoonnummer: ${formData.get("telefoon") || "Niet ingevuld"}`,
-    `Gemeente: ${formData.get("gemeente") || "Niet ingevuld"}`,
-    "",
-    "Probleem:",
-    `${formData.get("probleem") || ""}`
-  ];
+  const submitButton = form.querySelector("[type=submit]");
+  submitButton.disabled = true;
 
-  const mailtoUrl = `mailto:techdirect.brasschaat@gmail.com?subject=${encodeURIComponent("Nieuwe aanvraag via TECHDIRECT")}&body=${encodeURIComponent(lines.join("\n"))}`;
-
-  successMessage.classList.add("is-visible");
-  form.reset();
-  fieldConfigs.forEach((config) => {
-    config.error.textContent = "";
-    config.input.setAttribute("aria-invalid", "false");
-  });
-
-  window.location.href = mailtoUrl;
+  fetch("https://api.web3forms.com/submit", {
+    method: "POST",
+    body: new FormData(form)
+  })
+    .then((res) => res.json())
+    .then((data) => {
+      if (data.success) {
+        successMessage.classList.add("is-visible");
+        form.reset();
+        fieldConfigs.forEach((config) => {
+          config.error.textContent = "";
+          config.input.setAttribute("aria-invalid", "false");
+        });
+      } else {
+        successMessage.textContent = "Er is iets misgegaan. Probeer het opnieuw of stuur een WhatsApp.";
+        successMessage.classList.add("is-visible");
+      }
+    })
+    .catch(() => {
+      successMessage.textContent = "Er is iets misgegaan. Probeer het opnieuw of stuur een WhatsApp.";
+      successMessage.classList.add("is-visible");
+    })
+    .finally(() => {
+      submitButton.disabled = false;
+    });
 });
 
 const cookieStorageKey = "techdirect-cookie-dismissed";
