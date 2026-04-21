@@ -268,6 +268,10 @@ section[id] {
   transform: translateY(-6px) rotate(-45deg);
 }
 
+.nav-desktop {
+  display: none;
+}
+
 .nav-panel {
   position: fixed;
   top: 0;
@@ -1242,18 +1246,12 @@ section[id] {
 
   .nav-toggle,
   .nav-backdrop,
-  .nav-panel .mobile-only {
+  .nav-panel {
     display: none;
   }
 
-  .nav-panel {
-    position: static;
-    width: auto;
-    padding: 0;
-    background: transparent;
-    box-shadow: none;
-    transform: none;
-    flex-direction: row;
+  .nav-desktop {
+    display: flex;
     align-items: center;
     gap: var(--space-1);
   }
