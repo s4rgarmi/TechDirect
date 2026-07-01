@@ -491,12 +491,11 @@ section[id] {
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: var(--space-4);
-  padding: 1.5rem;
   background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-card);
+  overflow: hidden;
   transition:
     transform var(--transition),
     box-shadow var(--transition),
@@ -510,40 +509,47 @@ section[id] {
   box-shadow: var(--shadow-soft);
 }
 
-.service-card .service-badge {
+.service-photo {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  background: var(--color-surface-soft);
+}
+
+.service-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.service-badge {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
+  top: 0.75rem;
+  left: 0.75rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 2rem;
-  padding: 0 0.75rem;
+  width: 1.9rem;
+  height: 1.9rem;
   border-radius: 999px;
   background: var(--color-accent);
   color: var(--color-surface);
-  font-size: 0.84rem;
+  font-size: 0.85rem;
   font-weight: 700;
-}
-
-.service-icon {
-  width: 3rem;
-  height: 3rem;
-  padding: 0.75rem;
-  border-radius: 1rem;
-  background: var(--color-accent-soft);
-  color: var(--color-accent-strong);
+  box-shadow: 0 4px 10px rgba(15, 23, 42, 0.25);
 }
 
 .service-title {
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.2;
 }
 
 .service-copy {
   display: grid;
-  gap: var(--space-3);
+  gap: var(--space-2);
+  padding: 1.1rem 1.25rem;
 }
 
 .service-quote {
@@ -556,14 +562,16 @@ section[id] {
 .service-description {
   margin: 0;
   color: var(--color-text-muted);
+  font-size: 0.95rem;
 }
 
 .service-price {
   margin: 0;
   margin-top: auto;
-  padding-top: var(--space-2);
+  padding: 0 1.25rem 1.1rem;
   font-weight: 800;
   color: var(--color-success);
+  font-size: 0.92rem;
 }
 
 .form-card,
