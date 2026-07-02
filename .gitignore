@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+
+# Editor / OS rommel
+Thumbs.db
+*~
+
+# Tijdelijke bestanden
+.playwright-mcp/
+*.log
