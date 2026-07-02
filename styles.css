@@ -182,6 +182,12 @@ section[id] {
   box-shadow: 0 6px 20px rgba(15, 23, 42, 0.04);
 }
 
+.menu-open .site-header {
+  background: var(--color-surface);
+  border-bottom-color: rgba(219, 228, 240, 0.7);
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06);
+}
+
 
 
 .nav {
@@ -195,10 +201,6 @@ section[id] {
 .brand {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  width: clamp(8.25rem, 22vw, 10rem);
-  height: clamp(2.1rem, 5vw, 2.6rem);
-  overflow: hidden;
   position: relative;
   z-index: 3;
 }
@@ -206,10 +208,8 @@ section[id] {
 .brand-logo {
   display: block;
   width: auto;
-  height: 100%;
+  height: clamp(1.85rem, 4.5vw, 2.35rem);
   max-width: none;
-  transform: scale(3.8);
-  transform-origin: center center;
 }
 
 .nav-actions {
