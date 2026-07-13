@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="nl-BE">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IT-hulp aan huis in Brasschaat e.o. | TECHDIRECT</title>
-  <meta name="description" content="Persoonlijke IT-hulp aan huis in Brasschaat en omgeving: trage computer opfrissen, nieuw toestel of printer installeren, wifi, gsm, tablet en meer. Duidelijke uitleg, verplaatsing inbegrepen.">
+  <meta name="description" content="Computerhulp en IT-hulp aan huis in Brasschaat en omgeving: computer opfrissen, printer en wifi, gsm en tablet. Duidelijke uitleg, verplaatsing inbegrepen.">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#173a72">
   <link rel="canonical" href="https://techdirect.be/">
@@ -71,6 +71,11 @@
           "addressRegion": "Antwerpen",
           "addressCountry": "BE"
         },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 51.2912,
+          "longitude": 4.4920
+        },
         "areaServed": [
           {"@type": "City", "name": "Brasschaat"},
           {"@type": "City", "name": "Schoten"},
@@ -132,8 +137,11 @@
                 "name": "Printer & wifi hulp",
                 "description": "Printer aansluiten en instellen of wifi-problemen oplossen, inclusief verplaatsing."
               },
-              "price": "49",
-              "priceCurrency": "EUR"
+              "priceSpecification": {
+                "@type": "PriceSpecification",
+                "minPrice": "49",
+                "priceCurrency": "EUR"
+              }
             },
             {
               "@type": "Offer",
@@ -142,8 +150,11 @@
                 "name": "Spelconsole reparatie",
                 "description": "Elke spelconsole herstellen, van oud tot nieuw, inclusief verplaatsing."
               },
-              "price": "89",
-              "priceCurrency": "EUR"
+              "priceSpecification": {
+                "@type": "PriceSpecification",
+                "minPrice": "89",
+                "priceCurrency": "EUR"
+              }
             },
             {
               "@type": "Offer",
@@ -152,8 +163,11 @@
                 "name": "Pc bouwen & upgraden",
                 "description": "Nieuwe pc op maat samenstellen of een bestaande desktop verbeteren, inclusief verplaatsing."
               },
-              "price": "49",
-              "priceCurrency": "EUR"
+              "priceSpecification": {
+                "@type": "PriceSpecification",
+                "minPrice": "49",
+                "priceCurrency": "EUR"
+              }
             },
             {
               "@type": "Offer",
@@ -223,7 +237,7 @@
   <header class="site-header" id="top">
     <div class="container nav">
       <a class="brand" href="#top" aria-label="Ga naar boven">
-        <img class="brand-logo" src="images/logo/techdirect-logo-nav.png" alt="TECHDIRECT.be — herstel, upgrade, verbind">
+        <img class="brand-logo" src="images/logo/techdirect-logo-nav.png" width="1715" height="200" alt="TECHDIRECT.be — herstel, upgrade, verbind">
       </a>
 
       <nav class="nav-desktop" aria-label="Hoofdmenu">
@@ -339,7 +353,7 @@
         <div class="services-grid">
           <article class="service-card">
             <div class="service-photo">
-              <img src="images/diensten/laptop.jpg" alt="Laptop die opgefrist en klaargemaakt wordt voor een nieuwe start" loading="lazy">
+              <img src="images/diensten/laptop.jpg" width="1200" height="1800" alt="Laptop die opgefrist en klaargemaakt wordt voor een nieuwe start" loading="lazy">
               <span class="service-badge">1</span>
             </div>
             <div class="service-copy">
@@ -352,7 +366,7 @@
 
           <article class="service-card">
             <div class="service-photo">
-              <img src="images/diensten/data-overzetting.jpg" alt="Bestanden die overgezet worden van een oude naar een nieuwe schijf" loading="lazy">
+              <img src="images/diensten/data-overzetting.jpg" width="1200" height="795" alt="Bestanden die overgezet worden van een oude naar een nieuwe schijf" loading="lazy">
               <span class="service-badge">2</span>
             </div>
             <div class="service-copy">
@@ -365,7 +379,7 @@
 
           <article class="service-card">
             <div class="service-photo">
-              <img src="images/diensten/smartphone-tablet.jpg" alt="Smartphone en tablet die proper gemaakt worden" loading="lazy">
+              <img src="images/diensten/smartphone-tablet.jpg" width="1200" height="1200" alt="Smartphone en tablet die proper gemaakt worden" loading="lazy">
               <span class="service-badge">3</span>
             </div>
             <div class="service-copy">
@@ -378,7 +392,7 @@
 
           <article class="service-card">
             <div class="service-photo">
-              <img src="images/diensten/printer.jpg" alt="Printer die aangesloten en ingesteld wordt" loading="lazy">
+              <img src="images/diensten/printer.jpg" width="1200" height="800" alt="Printer die aangesloten en ingesteld wordt" loading="lazy">
               <span class="service-badge">4</span>
             </div>
             <div class="service-copy">
@@ -386,12 +400,12 @@
               <p class="service-quote">"Printer en internet, gewoon aan de praat"</p>
               <p class="service-description">Printer doet het niet of geen internet? Wij lossen het rustig voor u op.</p>
             </div>
-            <p class="service-price">€49 — verplaatsing en installatie inbegrepen</p>
+            <p class="service-price">Vanaf €49 — verplaatsing en installatie inbegrepen</p>
           </article>
 
           <article class="service-card">
             <div class="service-photo">
-              <img src="images/diensten/spelconsole.jpg" alt="Spelconsole controller die hersteld wordt" loading="lazy">
+              <img src="images/diensten/spelconsole.jpg" width="1200" height="1327" alt="Spelconsole controller die hersteld wordt" loading="lazy">
               <span class="service-badge">5</span>
             </div>
             <div class="service-copy">
@@ -404,7 +418,7 @@
 
           <article class="service-card">
             <div class="service-photo">
-              <img src="images/diensten/pc-bouwen.jpg" alt="Pc-behuizing die opgebouwd en verbeterd wordt met nieuwe onderdelen" loading="lazy">
+              <img src="images/diensten/pc-bouwen.jpg" width="1200" height="1600" alt="Pc-behuizing die opgebouwd en verbeterd wordt met nieuwe onderdelen" loading="lazy">
               <span class="service-badge">6</span>
             </div>
             <div class="service-copy">
@@ -417,7 +431,7 @@
 
           <article class="service-card">
             <div class="service-photo">
-              <img src="images/diensten/onderhoud.jpg" alt="Planning van vast, maandelijks onderhoud" loading="lazy">
+              <img src="images/diensten/onderhoud.jpg" width="1200" height="803" alt="Planning van vast, maandelijks onderhoud" loading="lazy">
               <span class="service-badge">7</span>
             </div>
             <div class="service-copy">
@@ -448,19 +462,19 @@
           <article class="step">
             <span class="step-number">2</span>
             <h3>Gratis inschatting</h3>
-            <p>Wij geven je een eerlijke prijs en hoelang het ongeveer duurt. Geen verplichtingen.</p>
+            <p>Wij geven u een eerlijke prijs en hoelang het ongeveer duurt. Geen verplichtingen.</p>
           </article>
 
           <article class="step">
             <span class="step-number">3</span>
-            <h3>Afhalen of thuisbezoek</h3>
-            <p>Wij halen je apparaat op in Brasschaat en omgeving.</p>
+            <h3>Aan huis of ophalen</h3>
+            <p>Wij komen bij u langs. Is het handiger, dan halen wij uw toestel op en brengen het terug.</p>
           </article>
 
           <article class="step">
             <span class="step-number">4</span>
             <h3>Klaar en gegarandeerd</h3>
-            <p>Je krijgt je apparaat terug met 30 dagen garantie op ons werk.</p>
+            <p>Alles werkt weer zoals het hoort, en u krijgt 30 dagen garantie op ons werk.</p>
           </article>
         </div>
       </div>
@@ -476,7 +490,7 @@
         <article class="about-profile">
           <div class="about-profile-media">
             <div class="about-photo-frame">
-              <img class="about-photo" src="images/overons/IMG_1952.jpeg" alt="Bamdad, eigenaar van TECHDIRECT">
+              <img class="about-photo" src="images/overons/IMG_1952.jpeg" width="640" height="1138" alt="Bamdad, eigenaar van TECHDIRECT uit Brasschaat" loading="lazy">
             </div>
             <p class="about-role-pill">Eigenaar &amp; technicus</p>
           </div>
@@ -485,7 +499,7 @@
             <span class="about-eyebrow">Maak kennis met</span>
             <h3 class="about-name">Bamdad</h3>
             <p class="about-quote">&ldquo;Ik neem de tijd om alles rustig uit te leggen, zodat u precies weet wat er met uw toestel gebeurt.&rdquo;</p>
-            <p class="about-text">Bamdad kent en begrijpt alles op vlak van technologie, van laptops en gsm's tot tablets, consoles en printers. Hij studeert IT en is van Perzische afkomst, en werkt rustig, duidelijk en zoekt telkens naar een oplossing die praktisch en betaalbaar blijft.</p>
+            <p class="about-text">Bamdad helpt u met laptops, gsm's, tablets, printers, netwerken en spelconsoles. Hij studeert IT en is van Perzische afkomst. Hij werkt rustig en duidelijk, en zoekt telkens naar een oplossing die praktisch en betaalbaar blijft.</p>
 
             <ul class="about-highlights">
               <li>
@@ -516,41 +530,7 @@
           </div>
         </article>
 
-        <div class="reviews-block">
-          <div class="section-header reviews-header">
-            <h3 class="section-title reviews-title">Google reviews</h3>
-            <p class="section-subtitle">Een kleine greep uit wat klanten over ons zeggen.</p>
-          </div>
-
-          <div class="reviews-grid">
-            <article class="review-card">
-              <div class="review-stars" aria-label="5 op 5 sterren">
-                <span aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-              </div>
-              <p class="review-text">"Heel vriendelijke service. Mijn laptop was opnieuw snel klaar en alles werd rustig uitgelegd."</p>
-              <p class="review-author">Sarah uit Brasschaat</p>
-              <p class="review-source">Google review</p>
-            </article>
-
-            <article class="review-card">
-              <div class="review-stars" aria-label="5 op 5 sterren">
-                <span aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-              </div>
-              <p class="review-text">"Snelle communicatie en heel proper werk. Onze bestanden stonden zonder problemen op het nieuwe toestel."</p>
-              <p class="review-author">Tom uit Kapellen</p>
-              <p class="review-source">Google review</p>
-            </article>
-
-            <article class="review-card">
-              <div class="review-stars" aria-label="4 op 5 sterren">
-                <span aria-hidden="true">&#9733;&#9733;&#9733;&#9733;<span class="review-star-muted">&#9733;</span></span>
-              </div>
-              <p class="review-text">"Goede hulp met mijn console en duidelijke uitleg. Zeker tevreden over de aanpak en opvolging."</p>
-              <p class="review-author">Ellen uit Essen</p>
-              <p class="review-source">Google review</p>
-            </article>
-          </div>
-        </div>
+        <!-- Reviews-sectie: terugplaatsen zodra echte Google reviews beschikbaar -->
       </div>
     </section>
 
@@ -720,7 +700,7 @@
                 <button class="button button-primary" type="submit">Verstuur bericht</button>
               </div>
               <p class="form-note">Liever sneller? Stuur meteen een WhatsApp.</p>
-              <div class="success-message" id="form-success" role="status" aria-live="polite">Bedankt! Wij nemen binnen 24u contact met je op.</div>
+              <div class="success-message" id="form-success" role="status" aria-live="polite">Bedankt! Wij nemen binnen 24u contact met u op.</div>
             </form>
           </div>
 
@@ -766,9 +746,8 @@
       </nav>
 
       <div class="footer-legal">
-        <p>BTW-vrijgestelde kleine onderneming | Brasschaat, België</p>
-        <p>Wij verwerken je contactgegevens enkel om je vraag te beantwoorden en delen ze nooit met derden.</p>
-        <p>Vrijgesteld van BTW op basis van artikel 56bis WBTW - kleine onderneming.</p>
+        <p>Brasschaat, België</p>
+        <p>Wij verwerken uw contactgegevens enkel om uw vraag te beantwoorden en delen ze nooit met derden.</p>
       </div>
 
       <div class="footer-bottom">

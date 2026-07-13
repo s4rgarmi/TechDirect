@@ -632,23 +632,10 @@ section[id] {
 }
 
 .contact-grid,
-.area-meta,
-.faq-grid {
+.area-meta {
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--space-6);
-}
-
-.reviews-block {
-  margin-top: var(--space-12);
-}
-
-.reviews-header {
-  margin-bottom: var(--space-6);
-}
-
-.reviews-title {
-  font-size: clamp(1.6rem, 3vw, 2.1rem);
 }
 
 .about-profile {
@@ -793,69 +780,12 @@ section[id] {
   height: 0.95rem;
 }
 
-.reviews-grid {
+.faq-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--space-4);
-}
-
-.faq-grid {
-  display: grid;
-  gap: var(--space-4);
   max-width: 56rem;
   margin: 0 auto;
-}
-
-.review-card {
-  display: grid;
-  gap: var(--space-3);
-  padding: 1.5rem;
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-card);
-  transition:
-    transform var(--transition),
-    box-shadow var(--transition),
-    border-color var(--transition);
-}
-
-.review-card:hover,
-.review-card:focus-within {
-  transform: translateY(-4px);
-  border-color: rgba(23, 58, 114, 0.28);
-  box-shadow: var(--shadow-soft);
-}
-
-.review-stars {
-  color: #f59e0b;
-  font-size: 1.05rem;
-  letter-spacing: 0.06em;
-}
-
-.review-star-muted {
-  color: #cbd5e1;
-}
-
-.review-text {
-  margin: 0;
-  color: var(--color-text);
-  font-size: 1rem;
-}
-
-.review-author,
-.review-source {
-  margin: 0;
-}
-
-.review-author {
-  font-weight: 700;
-  color: var(--color-bg);
-}
-
-.review-source {
-  color: var(--color-text-muted);
-  font-size: 0.95rem;
 }
 
 .area-showcase {
@@ -1289,17 +1219,6 @@ section[id] {
   display: none;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-}
-
 @media (min-width: 40rem) {
   .form-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1400,10 +1319,6 @@ section[id] {
 
   .about-highlights li {
     justify-content: flex-start;
-  }
-
-  .reviews-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .area-showcase,

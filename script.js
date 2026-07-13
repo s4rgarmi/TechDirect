@@ -143,7 +143,7 @@ const fieldConfigs = [
     error: document.getElementById("naam-error"),
     validate(value) {
       if (!value.trim()) {
-        return "Vul je naam in.";
+        return "Vul uw naam in.";
       }
       return "";
     }
@@ -153,7 +153,7 @@ const fieldConfigs = [
     error: document.getElementById("email-error"),
     validate(value) {
       if (!value.trim()) {
-        return "Vul je e-mailadres in.";
+        return "Vul uw e-mailadres in.";
       }
 
       const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
