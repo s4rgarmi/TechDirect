@@ -511,7 +511,9 @@ section[id] {
 
 .service-photo {
   position: relative;
-  aspect-ratio: 16 / 10;
+  height: 200px;
+  overflow: hidden;
+  flex-shrink: 0;
   background: var(--color-surface-soft);
 }
 

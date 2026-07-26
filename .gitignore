@@ -8,3 +8,4 @@ Thumbs.db
 # Tijdelijke bestanden
 .playwright-mcp/
 *.log
+.claude
